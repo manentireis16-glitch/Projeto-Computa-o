@@ -2,37 +2,120 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="view..............port" content="width=device-width, initial-scale=1.0">
-    <title>Título da Minha Página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner do Boxe | Notícias, Rankings e Análises</title>
     
-    <!-- Link para o arquivo CSS externo (opcional) -->
+    <!-- CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>.....
+<body>
 
+    <!-- Cabeçalho Principal -->
     <header>
-        <h1>Meu Site</h1>
+        <div class="logo">
+            <h1>CORNER <span>BOXE</span></h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#ultimas-noticias">Notícias</a></li>
+                <li><a href="#proximas-lutas">Próximas Lutas</a></li>
+                <li><a href="#rankings">Rankings</a></li>
+                <li><a href="#galeria">Galeria</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Banner Principal / Destaque -->
+    <section class="hero-destaque">
+        <div class="destaque-conteudo">
+            <span class="tag-categoria">Grande Combate</span>
+            <h2>Disputa do Cinturão dos Pesos-Pesados</h2>
+            <p>Confira a análise tática completa antes do confronto deste final de semana.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
     <main>
-        <section id="inicio">.
-            <h2>Bem-vindo!</h2>
-            <p>Este é o conteúdo principal do seu site.</p>
+        
+        <!-- Últimas Notícias -->
+        <section id="ultimas-noticias" class="noticias-secao">
+            <h2>Últimas Notícias</h2>
+            
+            <div class="noticias-grid">
+                <article class="card-noticia">
+                    <h3>Análise: A evolução do Jab na era moderna</h3>
+                    <p>Como os lutadores atuais estão utilizando o golpe fundamental para controlar a distância.</p>
+                </article>
+
+                <article class="card-noticia">
+                    <h3>Top 5 Nocautes do Mês</h3>
+                    <p>Confira a seleção das finalizações mais espetaculares que aconteceram ao redor do mundo.</p>
+                </article>
+
+                <article class="card-noticia">
+                    <h3>História dos Grandes Campeões</h3>
+                    <p>Uma retrospectiva sobre os momentos icônicos que moldaram a era de ouro do boxe mundial.</p>
+                </article>
+            </div>
         </section>
+
+        <!-- Calendário de Próximos Eventos -->
+        <section id="proximas-lutas" class="lutas-secao">
+            <h2>Próximos Confrontos</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Lutadores</th>
+                            <th>Categoria</th>
+                            <th>Local</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/Nov</td>
+                            <td>Silva vs. Rodriguez</td>
+                            <td>Peso Médio</td>
+                            <td>Las Vegas, NV</td>
+                        </tr>
+                        <tr>
+                            <td>22/Nov</td>
+                            <td>Tyson vs. Jones</td>
+                            <td>Peso Pesado</td>
+                            <td>Londres, UK</td>
+                        </tr>
+                        <tr>
+                            <td>05/Dez</td>
+                            <td>Alvarez vs. Charlo</td>
+                            <td>Peso Super-Médio</td>
+                            <td>Cidade do México</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Interatividade: Filtro/Busca rápida de Lutadores -->
+        <section id="rankings" class="rankings-secao">
+            <h2>Pesquisar Ranking de Lutador</h2>
+            <div class="busca-box">
+                <input type="text" id="campo-busca" placeholder="Digite o nome de um lutador...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+            <div id="resultado-busca" class="resultado-box">
+                <p>Digite um nome acima para consultar a posição no ranking.</p>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Meu Site - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Corner Boxe - O Portal do Boxe Mundial. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Link para o arquivo JavaScript externo (opcional) -->
+    <!-- JavaScript Externo -->
     <script src="script.js"></script>
 </body>
-</html>..
+</html>
