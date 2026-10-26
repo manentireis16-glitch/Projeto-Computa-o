@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corner do Boxe | Notícias, Rankings e Análises</title>
+    <title>Nocautes Web | Fórum, Rankings e Lendas do Boxe</title>
     
-    <!-- CSS Externo -->
+    <!-- Link para o CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,98 +13,353 @@
     <!-- Cabeçalho Principal -->
     <header>
         <div class="logo">
-            <h1>CORNER <span>BOXE</span></h1>
+            <span class="logo-icon">KO</span>
+            <h1>NOCAUTES <span>WEB</span></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#ultimas-noticias">Notícias</a></li>
-                <li><a href="#proximas-lutas">Próximas Lutas</a></li>
+                <li><a href="#noticias">Notícias & Vídeos</a></li>
                 <li><a href="#rankings">Rankings</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#lendas">Lendas do Boxe</a></li>
+                <li><a href="#busca">Buscar Lutador</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal / Destaque -->
-    <section class="hero-destaque">
-        <div class="destaque-conteudo">
-            <span class="tag-categoria">Grande Combate</span>
-            <h2>Disputa do Cinturão dos Pesos-Pesados</h2>
-            <p>Confira a análise tática completa antes do confronto deste final de semana.</p>
+    <!-- Banner de Destaque estilo Portal -->
+    <section class="hero-banner">
+        <div class="hero-info">
+            <span class="tag-vermelha">Especial de Análise</span>
+            <h2>A Nobre Arte em Alta Definição</h2>
+            <p>Estatísticas, análises táticas, rankings oficiais atualizados e o legado dos maiores nocauteadores da história.</p>
         </div>
     </section>
 
     <!-- Conteúdo Principal -->
     <main>
         
-        <!-- Últimas Notícias -->
-        <section id="ultimas-noticias" class="noticias-secao">
-            <h2>Últimas Notícias</h2>
+        <!-- Notícias e Vídeos estilo YouTube / Feed -->
+        <section id="noticias">
+            <h2 class="titulo-secao">Últimas Análises e Destaques</h2>
+            <p class="subtitulo-secao">Confira artigos táticos e destaques em vídeo das principais lutas do circuito mundial.</p>
+
+            <div class="grid-noticias">
+                <article class="card-feed">
+                    <div class="thumb-container">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=600" alt="Treino de Boxe">
+                        <span class="tempo-video">Análise Tática</span>
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>A Evolução do Jab na Era Moderna do Boxe</h3>
+                        <p>Como lutadores atuais usam o golpe fundamental para dominar a distância e ditar o ritmo contra pegadores.</p>
+                        <a href="https://www.youtube.com/results?search_query=boxing+jab+technique+breakdown" target="_blank" class="link-youtube">
+                            ▶ Assistir Melhores Momentos no YouTube
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-feed">
+                    <div class="thumb-container">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=600" alt="Ringue de Boxe">
+                        <span class="tempo-video">Top Highlights</span>
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Top 5 Nocautes Devastadores da Temporada</h3>
+                        <p>Uma seleção das finalizações mais espetaculares que balançaram as arenas ao redor do mundo.</p>
+                        <a href="https://www.youtube.com/results?search_query=top+boxing+knockouts" target="_blank" class="link-youtube">
+                            ▶ Assistir Melhores Momentos no YouTube
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-feed">
+                    <div class="thumb-container">
+                        <img src="https://images.unsplash.com/photo-1509563839001-b5423b9345e6?q=80&w=600" alt="Lutador de Boxe">
+                        <span class="tempo-video">Documentário</span>
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>A Era de Ouro dos Pesos-Médios nos Anos 80</h3>
+                        <p>A história inesquecível da rivalidade intensa entre Sugar Ray Leonard, Marvin Hagler, Thomas Hearns e Roberto Durán.</p>
+                        <a href="https://www.youtube.com/results?search_query=the+four+kings+boxing+documentary" target="_blank" class="link-youtube">
+                            ▶ Assistir Documentário no YouTube
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Rankings em Abas -->
+        <section id="rankings">
+            <h2 class="titulo-secao">Rankings Mundiais Atualizados</h2>
+            <p class="subtitulo-secao">Posicionamento oficial consolidado das organizações WBA, WBC, IBF e WBO.</p>
+
+            <div class="abas-container">
+                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound (P4P)</button>
+                <button class="aba-btn" onclick="abrirAba(event, 'pesados')">Pesos-Pesados</button>
+                <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Pesos Super-Médios</button>
+            </div>
+
+            <!-- Tabela 1: P4P -->
+            <div id="p4p" class="conteudo-aba ativo">
+                <div class="tabela-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Lutador</th>
+                                <th>Categoria</th>
+                                <th>Cartel (V-D-E)</th>
+                                <th>Status / Titulos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>#1</strong></td>
+                                <td><strong>Oleksandr Usyk</strong></td>
+                                <td>Peso-Pesado</td>
+                                <td>22-0-0 (14 KO)</td>
+                                <td>Campeão Mundial Unificado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#2</strong></td>
+                                <td><strong>Naoya Inoue</strong></td>
+                                <td>Peso Super-Galo</td>
+                                <td>28-0-0 (25 KO)</td>
+                                <td>Campeão Indiscutível</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#3</strong></td>
+                                <td><strong>Terence Crawford</strong></td>
+                                <td>Peso Médio-Ligeiro</td>
+                                <td>41-0-0 (31 KO)</td>
+                                <td>Campeão Mundial</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#4</strong></td>
+                                <td><strong>Canelo Álvarez</strong></td>
+                                <td>Peso Super-Médio</td>
+                                <td>62-2-2 (39 KO)</td>
+                                <td>Campeão Unificado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#5</strong></td>
+                                <td><strong>Artur Beterbiev</strong></td>
+                                <td>Peso Meio-Pesado</td>
+                                <td>21-0-0 (20 KO)</td>
+                                <td>Campeão Indiscutível</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tabela 2: Pesos-Pesados -->
+            <div id="pesados" class="conteudo-aba">
+                <div class="tabela-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Lutador</th>
+                                <th>País</th>
+                                <th>Cinturão / Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>C</strong></td>
+                                <td><strong>Oleksandr Usyk</strong></td>
+                                <td>Ucrânia</td>
+                                <td>Campeão WBA, WBC, WBO & Ring Magazine</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C</strong></td>
+                                <td><strong>Daniel Dubois</strong></td>
+                                <td>Reino Unido</td>
+                                <td>Campeão IBF</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#1</strong></td>
+                                <td><strong>Tyson Fury</strong></td>
+                                <td>Reino Unido</td>
+                                <td>Desafiante Principal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#2</strong></td>
+                                <td><strong>Joseph Parker</strong></td>
+                                <td>Nova Zelândia</td>
+                                <td>Campeão Interino WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#3</strong></td>
+                                <td><strong>Anthony Joshua</strong></td>
+                                <td>Reino Unido</td>
+                                <td>Top Contender</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tabela 3: Super-Médios -->
+            <div id="super-medios" class="conteudo-aba">
+                <div class="tabela-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Lutador</th>
+                                <th>País</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>C</strong></td>
+                                <td><strong>Canelo Álvarez</strong></td>
+                                <td>México</td>
+                                <td>Campeão Unificado WBA, WBC, WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#1</strong></td>
+                                <td><strong>Christian Mbilli</strong></td>
+                                <td>França</td>
+                                <td>Desafiante #1 WBC</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#2</strong></td>
+                                <td><strong>Jaime Munguia</strong></td>
+                                <td>México</td>
+                                <td>Contender Top 5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#3</strong></td>
+                                <td><strong>Edgar Berlanga</strong></td>
+                                <td>Porto Rico</td>
+                                <td>Contender Top 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Lendas do Boxe -->
+        <section id="lendas">
+            <h2 class="titulo-secao">Lendas Imortais do Boxe</h2>
             
-            <div class="noticias-grid">
-                <article class="card-noticia">
-                    <h3>Análise: A evolução do Jab na era moderna</h3>
-                    <p>Como os lutadores atuais estão utilizando o golpe fundamental para controlar a distância.</p>
+            <!-- Destaque: Os Quatro Reis dos Anos 80 -->
+            <div class="bloco-reis">
+                <h3>👑 Os Quatro Reis (The Four Kings)</h3>
+                <p>O quarteto lendário que dominou os anos 80 nas categorias meio-médio e médio com guerras inesquecíveis:</p>
+                
+                <div class="grid-lendas">
+                    <article class="card-lenda">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=400" alt="Sugar Ray Leonard">
+                        <h4>Sugar Ray Leonard</h4>
+                        <span class="badge-categoria">Meio-Médio / Médio</span>
+                        <p>Genialidade, velocidade espetacular e campeão em 5 divisões de peso.</p>
+                        <a href="https://www.youtube.com/results?search_query=sugar+ray+leonard+highlights" target="_blank" class="link-youtube">
+                            ▶ Ver Lutas no YouTube
+                        </a>
+                    </article>
+
+                    <article class="card-lenda">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=400" alt="Roberto Duran">
+                        <h4>Roberto "Mano de Piedra" Durán</h4>
+                        <span class="badge-categoria">Leve / Meio-Médio</span>
+                        <p>Agressividade lendária e domínio absoluto no peso-leve por quase 10 anos.</p>
+                        <a href="https://www.youtube.com/results?search_query=roberto+duran+highlights" target="_blank" class="link-youtube">
+                            ▶ Ver Lutas no YouTube
+                        </a>
+                    </article>
+
+                    <article class="card-lenda">
+                        <img src="https://images.unsplash.com/photo-1509563839001-b5423b9345e6?q=80&w=400" alt="Thomas Hearns">
+                        <h4>Thomas "Hitman" Hearns</h4>
+                        <span class="badge-categoria">Meio-Médio / Meio-Pesado</span>
+                        <p>O direto de direita mais devastador da história do boxe.</p>
+                        <a href="https://www.youtube.com/results?search_query=thomas+hearns+highlights" target="_blank" class="link-youtube">
+                            ▶ Ver Lutas no YouTube
+                        </a>
+                    </article>
+
+                    <article class="card-lenda">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=400" alt="Marvin Hagler">
+                        <h4>Marvelous Marvin Hagler</h4>
+                        <span class="badge-categoria">Peso-Médio</span>
+                        <p>Queixo de aço e força mental imbatível. Dominou os médios por anos.</p>
+                        <a href="https://www.youtube.com/results?search_query=marvin+hagler+highlights" target="_blank" class="link-youtube">
+                            ▶ Ver Lutas no YouTube
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Ícones de Todas as Eras -->
+            <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Ícones Globais</h3>
+            <div class="grid-lendas">
+                <article class="card-lenda">
+                    <h4>Muhammad Ali</h4>
+                    <span class="badge-categoria">Peso-Pesado</span>
+                    <p>"The Greatest". Tricampeão mundial e a maior figura do esporte mundial.</p>
                 </article>
 
-                <article class="card-noticia">
-                    <h3>Top 5 Nocautes do Mês</h3>
-                    <p>Confira a seleção das finalizações mais espetaculares que aconteceram ao redor do mundo.</p>
+                <article class="card-lenda">
+                    <h4>Mike Tyson</h4>
+                    <span class="badge-categoria">Peso-Pesado</span>
+                    <p>O campeão dos pesos-pesados mais jovem e intimidador da história.</p>
                 </article>
 
-                <article class="card-noticia">
-                    <h3>História dos Grandes Campeões</h3>
-                    <p>Uma retrospectiva sobre os momentos icônicos que moldaram a era de ouro do boxe mundial.</p>
+                <article class="card-lenda">
+                    <h4>Manny Pacquiao</h4>
+                    <span class="badge-categoria">8 Categorias</span>
+                    <p>O único boxeador a conquistar títulos em oito divisões de peso.</p>
+                </article>
+
+                <article class="card-lenda">
+                    <h4>Floyd Mayweather Jr.</h4>
+                    <span class="badge-categoria">Invicto (50-0)</span>
+                    <p>Considerado o maior mestre defensivo e tático de todos os tempos.</p>
+                </article>
+
+                <article class="card-lenda">
+                    <h4>George Foreman</h4>
+                    <span class="badge-categoria">Peso-Pesado</span>
+                    <p>Força avassaladora e campeão mundial aos 45 anos de idade.</p>
+                </article>
+
+                <article class="card-lenda">
+                    <h4>Vasiliy Lomachenko</h4>
+                    <span class="badge-categoria">Peso-Leve</span>
+                    <p>Bicampeão olímpico famoso pelo trabalho de pés revolucionário no ringue.</p>
+                </article>
+
+                <article class="card-lenda">
+                    <h4>Oleksandr Usyk</h4>
+                    <span class="badge-categoria">Pesado / Cruzador</span>
+                    <p>Campeão indiscutível nas duas divisões mais pesadas do boxe moderno.</p>
+                </article>
+
+                <article class="card-lenda">
+                    <h4>Éder Jofre</h4>
+                    <span class="badge-categoria">Galo e Pena</span>
+                    <p>O "Galo de Ouro". Maior nome do boxe brasileiro e imortal no Hall da Fama.</p>
                 </article>
             </div>
         </section>
 
-        <!-- Calendário de Próximos Eventos -->
-        <section id="proximas-lutas" class="lutas-secao">
-            <h2>Próximos Confrontos</h2>
-            <div class="tabela-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Data</th>
-                            <th>Lutadores</th>
-                            <th>Categoria</th>
-                            <th>Local</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>15/Nov</td>
-                            <td>Silva vs. Rodriguez</td>
-                            <td>Peso Médio</td>
-                            <td>Las Vegas, NV</td>
-                        </tr>
-                        <tr>
-                            <td>22/Nov</td>
-                            <td>Tyson vs. Jones</td>
-                            <td>Peso Pesado</td>
-                            <td>Londres, UK</td>
-                        </tr>
-                        <tr>
-                            <td>05/Dez</td>
-                            <td>Alvarez vs. Charlo</td>
-                            <td>Peso Super-Médio</td>
-                            <td>Cidade do México</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Interatividade: Filtro/Busca rápida de Lutadores -->
-        <section id="rankings" class="rankings-secao">
-            <h2>Pesquisar Ranking de Lutador</h2>
-            <div class="busca-box">
-                <input type="text" id="campo-busca" placeholder="Digite o nome de um lutador...">
-                <button id="btn-buscar">Buscar</button>
-            </div>
-            <div id="resultado-busca" class="resultado-box">
-                <p>Digite um nome acima para consultar a posição no ranking.</p>
+        <!-- Pesquisa Interativa -->
+        <section id="busca">
+            <h2 class="titulo-secao">Consulta Rápida de Lutadores</h2>
+            <div class="busca-container">
+                <div class="busca-input-group">
+                    <input type="text" id="campo-busca" placeholder="Pesquise por nome (ex: Usyk, Ali, Tyson, Hearns, Pacquiao)...">
+                    <button id="btn-buscar">Buscar</button>
+                </div>
+                <div id="resultado-busca" class="resultado-box">
+                    Digite um nome acima para ver as informações do campeão ou lenda.
+                </div>
             </div>
         </section>
 
@@ -112,10 +367,10 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Corner Boxe - O Portal do Boxe Mundial. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Nocautes Web - Fórum e Portal do Boxe Mundial. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- JavaScript Externo -->
+    <!-- Link para o JavaScript Externo -->
     <script src="script.js"></script>
 </body>
 </html>
