@@ -25,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Thomas Hearns", categoria: "Meio-Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Marvin Hagler", categoria: "Peso-Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Manny Pacquiao", categoria: "8 Categorias", status: "Lenda / Campeão em 8 divisões de peso" },
-        { nome: "Floyd Mayweather", categoria: "Meio-Médio", status: "Lenda / Invicto na carreira (50-0)" },
-        { nome: "Vasiliy Lomachenko", categoria: "Peso-Leve", status: "Lenda / Bicampeão Olímpico" },
-        { nome: "Eder Jofre", categoria: "Peso-Galo / Pena", status: "Lenda do Boxe Brasileiro / Hall da Fama" }
+        { nome: "Floyd Mayweather", categoria: "Meio-Médio", status: "Lenda / Invicto na carreira (50-0)" }
     ];
 
     const campoBusca = document.getElementById("campo-busca");

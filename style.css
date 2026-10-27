@@ -167,13 +167,12 @@ section {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .card-feed:hover {
     transform: translateY(-4px);
     background-color: var(--bg-card-hover);
-    border-color: #555555;
 }
 
 .thumb-container {
@@ -188,12 +187,6 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-}
-
-.card-feed:hover .thumb-container img {
-    opacity: 1;
 }
 
 .tempo-video {
@@ -216,7 +209,6 @@ section {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 8px;
-    line-height: 1.3;
 }
 
 .card-conteudo p {
@@ -232,7 +224,6 @@ section {
     color: var(--vermelho-destaque);
     font-size: 0.85rem;
     font-weight: 700;
-    transition: color 0.2s ease;
 }
 
 .link-youtube:hover {
@@ -299,7 +290,6 @@ th {
     color: var(--texto-secundario);
     text-transform: uppercase;
     font-size: 0.75rem;
-    letter-spacing: 0.5px;
 }
 
 tr:nth-child(even) {
@@ -352,12 +342,30 @@ tr:hover {
     transform: translateY(-2px);
 }
 
-.card-lenda img {
+/* Container específico para encaixar as fotos dos Quatro Reis perfeitamente */
+.thumb-container-lenda {
     width: 100%;
-    height: 140px;
-    object-fit: cover;
+    height: 260px;
+    overflow: hidden;
     border-radius: 6px;
+    background-color: #000;
     margin-bottom: 4px;
+}
+
+.thumb-container-lenda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.3s ease;
+}
+
+.card-lenda:hover .thumb-container-lenda img {
+    transform: scale(1.05);
+}
+
+.card-lenda h4 {
+    font-size: 1.05rem;
 }
 
 .badge-categoria {
@@ -396,7 +404,6 @@ tr:hover {
     color: #ffffff;
     font-size: 0.95rem;
     outline: none;
-    transition: border-color 0.2s ease;
 }
 
 .busca-input-group input:focus {
@@ -411,7 +418,6 @@ tr:hover {
     border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
 .busca-input-group button:hover {

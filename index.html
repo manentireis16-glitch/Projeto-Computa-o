@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nocautes Web | O Portal Definitivo do Boxe</title>
     
-    <!-- Link Relativo (Essencial para GitHub Pages) -->
-    <link rel="stylesheet" href="style.css?v=2.0">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
 
-    <!-- Cabeçalho (Estilo YouTube / Platform Header) -->
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <span class="logo-icon">KO</span>
@@ -18,15 +18,15 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#noticias">Vídeos & Notícias</a></li>
-                <li><a href="#rankings">Rankings P4P</a></li>
-                <li><a href="#lendas">Lendas & Hall da Fama</a></li>
-                <li><a href="#busca">Pesquisa Rápida</a></li>
+                <li><a href="#noticias">Vídeos</a></li>
+                <li><a href="#rankings">Rankings</a></li>
+                <li><a href="#lendas">Lendas</a></li>
+                <li><a href="#busca">Busca</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal (Hero) -->
+    <!-- Banner Principal -->
     <section class="hero-banner">
         <div class="hero-info">
             <span class="tag-vermelha">Destaque da Semana</span>
@@ -88,15 +88,15 @@
             </div>
         </section>
 
-        <!-- Rankings com Abas Interativas -->
+        <!-- Rankings -->
         <section id="rankings">
             <h2 class="titulo-secao">Rankings Oficiais Consolidados</h2>
             <p class="subtitulo-secao">Atualização baseada nas principais organizações (WBA, WBC, IBF, WBO).</p>
 
             <div class="abas-container">
-                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound (P4P)</button>
+                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'pesados')">Pesos-Pesados</button>
-                <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Pesos Super-Médios</button>
+                <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Super-Médios</button>
             </div>
 
             <!-- Tabela P4P -->
@@ -108,8 +108,8 @@
                                 <th>#</th>
                                 <th>Lutador</th>
                                 <th>Categoria</th>
-                                <th>Cartel (V-D-E)</th>
-                                <th>Status / Títulos</th>
+                                <th>Cartel</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -118,7 +118,7 @@
                                 <td><strong>Oleksandr Usyk</strong></td>
                                 <td>Peso-Pesado</td>
                                 <td>22-0-0 (14 KO)</td>
-                                <td>Campeão Mundial Unificado</td>
+                                <td>Campeão Unificado</td>
                             </tr>
                             <tr>
                                 <td><strong>#2</strong></td>
@@ -159,10 +159,10 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Posição</th>
+                                <th>Pos</th>
                                 <th>Lutador</th>
                                 <th>País</th>
-                                <th>Cinturão / Status</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -170,7 +170,7 @@
                                 <td><strong>C</strong></td>
                                 <td><strong>Oleksandr Usyk</strong></td>
                                 <td>Ucrânia</td>
-                                <td>Campeão WBA, WBC, WBO & Ring Magazine</td>
+                                <td>Campeão WBA, WBC, WBO & Ring</td>
                             </tr>
                             <tr>
                                 <td><strong>C</strong></td>
@@ -190,12 +190,6 @@
                                 <td>Nova Zelândia</td>
                                 <td>Campeão Interino WBO</td>
                             </tr>
-                            <tr>
-                                <td><strong>#3</strong></td>
-                                <td><strong>Anthony Joshua</strong></td>
-                                <td>Reino Unido</td>
-                                <td>Top Contender</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -207,7 +201,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Posição</th>
+                                <th>Pos</th>
                                 <th>Lutador</th>
                                 <th>País</th>
                                 <th>Status</th>
@@ -232,61 +226,68 @@
                                 <td>México</td>
                                 <td>Contender Top 5</td>
                             </tr>
-                            <tr>
-                                <td><strong>#3</strong></td>
-                                <td><strong>Edgar Berlanga</strong></td>
-                                <td>Porto Rico</td>
-                                <td>Contender Top 5</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Lendas do Boxe -->
+        <!-- Seção de Lendas do Boxe (Com as fotos reais enviadas) -->
         <section id="lendas">
             <h2 class="titulo-secao">Lendas Imortais e Hall da Fama</h2>
             
             <div class="bloco-reis">
                 <h3>👑 Os Quatro Reis dos Anos 80 (The Four Kings)</h3>
-                <p>O quarteto lendário que protagonizou combates inesquecíveis e redefiniu as categorias de peso:</p>
+                <p>O quarteto lendário que protagonizou combates inesquecíveis e redefiniu o boxe:</p>
                 
                 <div class="grid-lendas">
+                    <!-- Thomas Hearns -->
                     <article class="card-lenda">
-                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=400" alt="Sugar Ray Leonard">
-                        <h4>Sugar Ray Leonard</h4>
-                        <span class="badge-categoria">Meio-Médio / Médio</span>
-                        <p>Genialidade tática, carisma e campeão em 5 divisões.</p>
-                        <a href="https://www.youtube.com/results?search_query=sugar+ray+leonard+highlights" target="_blank" class="link-youtube">▶ Ver no YouTube</a>
-                    </article>
-
-                    <article class="card-lenda">
-                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=400" alt="Roberto Duran">
-                        <h4>Roberto "Mano de Piedra" Durán</h4>
-                        <span class="badge-categoria">Leve / Meio-Médio</span>
-                        <p>Ferocidade inigualável e domínio absoluto nos pesos-leves.</p>
-                        <a href="https://www.youtube.com/results?search_query=roberto+duran+highlights" target="_blank" class="link-youtube">▶ Ver no YouTube</a>
-                    </article>
-
-                    <article class="card-lenda">
-                        <img src="https://images.unsplash.com/photo-1509563839001-b5423b9345e6?q=80&w=400" alt="Thomas Hearns">
+                        <div class="thumb-container-lenda">
+                            <img src="imagens/hearns.jpg" alt="Thomas Hearns">
+                        </div>
                         <h4>Thomas "Hitman" Hearns</h4>
                         <span class="badge-categoria">Meio-Médio / Meio-Pesado</span>
-                        <p>Dono de um dos diretos de direita mais temidos da história.</p>
-                        <a href="https://www.youtube.com/results?search_query=thomas+hearns+highlights" target="_blank" class="link-youtube">▶ Ver no YouTube</a>
+                        <p>Dono de um dos diretos de direita mais devastadores da história.</p>
+                        <a href="https://www.youtube.com/results?search_query=thomas+hearns+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                     </article>
 
+                    <!-- Marvin Hagler -->
                     <article class="card-lenda">
-                        <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=400" alt="Marvin Hagler">
+                        <div class="thumb-container-lenda">
+                            <img src="imagens/hagler.jpg" alt="Marvin Hagler">
+                        </div>
                         <h4>Marvelous Marvin Hagler</h4>
                         <span class="badge-categoria">Peso-Médio</span>
-                        <p>Queixo de aço, garra inabalável e reinado implacável nos médios.</p>
-                        <a href="https://www.youtube.com/results?search_query=marvin+hagler+highlights" target="_blank" class="link-youtube">▶ Ver no YouTube</a>
+                        <p>Queixo de aço e força mental imbatível nos médios.</p>
+                        <a href="https://www.youtube.com/results?search_query=marvin+hagler+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                    </article>
+
+                    <!-- Sugar Ray Leonard -->
+                    <article class="card-lenda">
+                        <div class="thumb-container-lenda">
+                            <img src="imagens/leonard.jpg" alt="Sugar Ray Leonard">
+                        </div>
+                        <h4>Sugar Ray Leonard</h4>
+                        <span class="badge-categoria">Meio-Médio / Médio</span>
+                        <p>Velocidade espetacular, carisma e campeão em 5 divisões.</p>
+                        <a href="https://www.youtube.com/results?search_query=sugar+ray+leonard+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                    </article>
+
+                    <!-- Roberto Durán -->
+                    <article class="card-lenda">
+                        <div class="thumb-container-lenda">
+                            <img src="imagens/duran.jpg" alt="Roberto Duran">
+                        </div>
+                        <h4>Roberto "Mano de Piedra" Durán</h4>
+                        <span class="badge-categoria">Leve / Meio-Médio</span>
+                        <p>Ferocidade pura e agressividade lendária no ringue.</p>
+                        <a href="https://www.youtube.com/results?search_query=roberto+duran+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                     </article>
                 </div>
             </div>
 
+            <!-- Outras Lendas Globais -->
             <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Ícones Globais do Ringue</h3>
             <div class="grid-lendas">
                 <article class="card-lenda">
@@ -312,39 +313,15 @@
                     <span class="badge-categoria">Invicto (50-0)</span>
                     <p>Mestre absoluto da defesa, da esquiva e da inteligência tática.</p>
                 </article>
-
-                <article class="card-lenda">
-                    <h4>George Foreman</h4>
-                    <span class="badge-categoria">Peso-Pesado</span>
-                    <p>Força bruta monumental e campeão mundial aos 45 anos.</p>
-                </article>
-
-                <article class="card-lenda">
-                    <h4>Vasiliy Lomachenko</h4>
-                    <span class="badge-categoria">Peso-Leve</span>
-                    <p>Trabalho de pés revolucionário e precisão cirúrgica.</p>
-                </article>
-
-                <article class="card-lenda">
-                    <h4>Oleksandr Usyk</h4>
-                    <span class="badge-categoria">Pesado / Cruzador</span>
-                    <p>Mestre absoluto da mobilidade e campeão unificado moderno.</p>
-                </article>
-
-                <article class="card-lenda">
-                    <h4>Éder Jofre</h4>
-                    <span class="badge-categoria">Galo / Pena</span>
-                    <p>O "Galo de Ouro". O maior nome do boxe brasileiro no Hall da Fama.</p>
-                </article>
             </div>
         </section>
 
-        <!-- Pesquisa Rápida -->
+        <!-- Busca Rápida -->
         <section id="busca">
             <h2 class="titulo-secao">Consulta Rápida de Lutadores</h2>
             <div class="busca-container">
                 <div class="busca-input-group">
-                    <input type="text" id="campo-busca" placeholder="Digite o nome (ex: Ali, Tyson, Usyk, Leonard, Pacquiao)...">
+                    <input type="text" id="campo-busca" placeholder="Digite o nome (ex: Ali, Tyson, Usyk, Leonard)...">
                     <button id="btn-buscar">Buscar</button>
                 </div>
                 <div id="resultado-busca" class="resultado-box">
@@ -360,7 +337,7 @@
         <p>&copy; 2026 Nocautes Web - Fórum e Portal de Notícias do Boxe. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script Relativo (Essencial para GitHub Pages) -->
-    <script src="script.js?v=2.0"></script>
+    <!-- JavaScript -->
+    <script src="script.js?v=3.0"></script>
 </body>
 </html>
