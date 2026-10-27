@@ -1,4 +1,3 @@
-// Função para alternar as abas de ranking
 function abrirAba(evt, nomeAba) {
     const conteudos = document.getElementsByClassName("conteudo-aba");
     for (let i = 0; i < conteudos.length; i++) {
@@ -14,7 +13,6 @@ function abrirAba(evt, nomeAba) {
     evt.currentTarget.classList.add("ativo");
 }
 
-// Lógica de busca rápida de lutadores
 document.addEventListener("DOMContentLoaded", () => {
     const lutadores = [
         { nome: "Oleksandr Usyk", categoria: "Peso-Pesado", status: "#1 no Ranking P4P / Campeão Unificado" },
@@ -26,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Roberto Duran", categoria: "Peso-Leve", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Thomas Hearns", categoria: "Meio-Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Marvin Hagler", categoria: "Peso-Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
-        { nome: "Manny Pacquiao", categoria: "8 Categorias", status: "Lenda / Campeão em 8 divisões" },
+        { nome: "Manny Pacquiao", categoria: "8 Categorias", status: "Lenda / Campeão em 8 divisões de peso" },
         { nome: "Floyd Mayweather", categoria: "Meio-Médio", status: "Lenda / Invicto na carreira (50-0)" },
         { nome: "Vasiliy Lomachenko", categoria: "Peso-Leve", status: "Lenda / Bicampeão Olímpico" },
         { nome: "Eder Jofre", categoria: "Peso-Galo / Pena", status: "Lenda do Boxe Brasileiro / Hall da Fama" }

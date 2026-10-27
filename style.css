@@ -1,11 +1,8 @@
-/* ==========================================================================
-   1. RESET & CORES ESTILO FORUM / YOUTUBE DARK
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
 }
 
 :root {
@@ -15,10 +12,9 @@
     --bg-linha: #181818;
     --border-color: #3f3f3f;
     --texto-principal: #f1f1f1;
-    --texto-secundario: #aaa;
+    --texto-secundario: #aaaaaa;
     --vermelho-destaque: #ff0000;
     --vermelho-hover: #cc0000;
-    --verde-sucesso: #2ba640;
 }
 
 body {
@@ -32,9 +28,10 @@ a {
     color: inherit;
 }
 
-/* ==========================================================================
-   2. CABEÇALHO & NAVEGAÇÃO
-   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--texto-principal);
+}
+
 header {
     background-color: #000000;
     display: flex;
@@ -55,7 +52,7 @@ header {
 
 .logo-icon {
     background-color: var(--vermelho-destaque);
-    color: #fff;
+    color: #ffffff;
     padding: 4px 8px;
     font-weight: 900;
     border-radius: 4px;
@@ -67,7 +64,6 @@ header {
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 1px;
-    color: var(--texto-principal);
 }
 
 .logo h1 span {
@@ -78,14 +74,14 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav ul li a {
     font-weight: 500;
     font-size: 0.95rem;
     color: var(--texto-secundario);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 18px;
     transition: all 0.2s ease;
 }
@@ -95,11 +91,8 @@ nav ul li a:hover {
     color: var(--texto-principal);
 }
 
-/* ==========================================================================
-   3. HERO / BANNER DE DESTAQUE
-   ========================================================================== */
 .hero-banner {
-    background: linear-gradient(180deg, rgba(15,15,15,0.2) 0%, rgba(15,15,15,1) 100%), 
+    background: linear-gradient(180deg, rgba(15,15,15,0.3) 0%, rgba(15,15,15,1) 100%), 
                 url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1200') center/cover no-repeat;
     height: 320px;
     display: flex;
@@ -113,7 +106,7 @@ nav ul li a:hover {
 
 .tag-vermelha {
     background-color: var(--vermelho-destaque);
-    color: #fff;
+    color: #ffffff;
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -131,14 +124,11 @@ nav ul li a:hover {
 }
 
 .hero-info p {
-    color: #ddd;
+    color: #dddddd;
     font-size: 1rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
-/* ==========================================================================
-   4. LAYOUT PRINCIPAL E SEÇÕES
-   ========================================================================== */
 main {
     max-width: 1200px;
     margin: 30px auto;
@@ -152,7 +142,7 @@ section {
 .titulo-secao {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -163,16 +153,12 @@ section {
 .subtitulo-secao {
     color: var(--texto-secundario);
     font-size: 0.9rem;
-    margin-top: -15px;
     margin-bottom: 20px;
 }
 
-/* ==========================================================================
-   5. CARDS DE NOTÍCIAS & VÍDEOS
-   ========================================================================== */
 .grid-noticias {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -181,12 +167,13 @@ section {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .card-feed:hover {
     transform: translateY(-4px);
     background-color: var(--bg-card-hover);
+    border-color: #555555;
 }
 
 .thumb-container {
@@ -194,7 +181,7 @@ section {
     width: 100%;
     height: 180px;
     overflow: hidden;
-    background-color: #000;
+    background-color: #000000;
 }
 
 .thumb-container img {
@@ -202,6 +189,11 @@ section {
     height: 100%;
     object-fit: cover;
     opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.card-feed:hover .thumb-container img {
+    opacity: 1;
 }
 
 .tempo-video {
@@ -209,7 +201,7 @@ section {
     bottom: 8px;
     right: 8px;
     background-color: rgba(0, 0, 0, 0.85);
-    color: #fff;
+    color: #ffffff;
     font-size: 0.75rem;
     padding: 2px 6px;
     border-radius: 4px;
@@ -230,7 +222,7 @@ section {
 .card-conteudo p {
     color: var(--texto-secundario);
     font-size: 0.88rem;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .link-youtube {
@@ -240,38 +232,38 @@ section {
     color: var(--vermelho-destaque);
     font-size: 0.85rem;
     font-weight: 700;
+    transition: color 0.2s ease;
 }
 
 .link-youtube:hover {
     color: #ff4d4d;
 }
 
-/* ==========================================================================
-   6. ABAS E TABELAS DE RANKING
-   ========================================================================== */
 .abas-container {
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
+    overflow-x: auto;
 }
 
 .aba-btn {
     background-color: var(--bg-card);
     color: var(--texto-secundario);
     border: 1px solid var(--border-color);
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
     font-size: 0.85rem;
+    white-space: nowrap;
     transition: all 0.2s ease;
 }
 
 .aba-btn.ativo, .aba-btn:hover {
     background-color: var(--texto-principal);
-    color: #000;
+    color: #000000;
     border-color: var(--texto-principal);
 }
 
@@ -297,7 +289,7 @@ table {
 }
 
 th, td {
-    padding: 12px 16px;
+    padding: 14px 16px;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.9rem;
 }
@@ -318,9 +310,6 @@ tr:hover {
     background-color: var(--bg-card-hover);
 }
 
-/* ==========================================================================
-   7. SEÇÃO DE LENDAS DO BOXE
-   ========================================================================== */
 .bloco-reis {
     background: linear-gradient(135deg, #1f1f1f 0%, #121212 100%);
     border: 1px solid var(--border-color);
@@ -332,7 +321,6 @@ tr:hover {
 
 .bloco-reis h3 {
     font-size: 1.2rem;
-    color: var(--texto-principal);
     margin-bottom: 6px;
 }
 
@@ -344,7 +332,7 @@ tr:hover {
 
 .grid-lendas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 16px;
 }
 
@@ -356,11 +344,12 @@ tr:hover {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .card-lenda:hover {
     border-color: var(--vermelho-destaque);
+    transform: translateY(-2px);
 }
 
 .card-lenda img {
@@ -371,14 +360,9 @@ tr:hover {
     margin-bottom: 4px;
 }
 
-.card-lenda h4 {
-    font-size: 1.05rem;
-    color: #fff;
-}
-
 .badge-categoria {
     background-color: #2c2c2c;
-    color: #ddd;
+    color: #dddddd;
     font-size: 0.75rem;
     padding: 2px 8px;
     border-radius: 10px;
@@ -391,9 +375,6 @@ tr:hover {
     font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   8. FERRAMENTA DE BUSCA
-   ========================================================================== */
 .busca-container {
     background-color: var(--bg-card);
     padding: 20px;
@@ -407,3 +388,82 @@ tr:hover {
 }
 
 .busca-input-group input {
+    flex: 1;
+    padding: 12px 18px;
+    background-color: #0f0f0f;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.busca-input-group input:focus {
+    border-color: var(--vermelho-destaque);
+}
+
+.busca-input-group button {
+    padding: 12px 24px;
+    background-color: var(--vermelho-destaque);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.busca-input-group button:hover {
+    background-color: var(--vermelho-hover);
+}
+
+.resultado-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #141414;
+    border-radius: 8px;
+    border-left: 3px solid var(--vermelho-destaque);
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+.resultado-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--texto-secundario);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .busca-input-group {
+        flex-direction: column;
+    }
+
+    .busca-input-group button {
+        width: 100%;
+    }
+}
