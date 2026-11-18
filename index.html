@@ -6,7 +6,7 @@
     <title>Nocautes Web | O Portal Definitivo do Boxe</title>
     
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body>
 
@@ -19,8 +19,9 @@
         <nav>
             <ul>
                 <li><a href="#noticias">Vídeos</a></li>
-                <li><a href="#rankings">Rankings</a></li>
+                <li><a href="#rankings">Rankings & Divisões</a></li>
                 <li><a href="#lendas">Lendas</a></li>
+                <li><a href="#brasil">Brasil</a></li>
                 <li><a href="#busca">Busca</a></li>
             </ul>
         </nav>
@@ -31,7 +32,7 @@
         <div class="hero-info">
             <span class="tag-vermelha">Destaque da Semana</span>
             <h2>A Nobre Arte em Alta Definição</h2>
-            <p>Análises táticas profundas, estatísticas de campeões mundiais, arquivo de lendas e os melhores momentos do ringue.</p>
+            <p>Análises táticas profundas, as 17 divisões oficiais (WBA, WBC, IBF, WBO), arquivo de lendas e ícones do boxe brasileiro.</p>
         </div>
     </section>
 
@@ -88,15 +89,16 @@
             </div>
         </section>
 
-        <!-- Rankings -->
+        <!-- Rankings & Divisões -->
         <section id="rankings">
-            <h2 class="titulo-secao">Rankings Oficiais Consolidados</h2>
-            <p class="subtitulo-secao">Atualização baseada nas principais organizações (WBA, WBC, IBF, WBO).</p>
+            <h2 class="titulo-secao">Rankings e Divisões Oficiais</h2>
+            <p class="subtitulo-secao">Consolidação das 4 grandes organizações: WBA, WBC, IBF e WBO.</p>
 
             <div class="abas-container">
                 <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'pesados')">Pesos-Pesados</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Super-Médios</button>
+                <button class="aba-btn" onclick="abrirAba(event, 'divisoes')">Todas as 17 Divisões</button>
             </div>
 
             <!-- Tabela P4P -->
@@ -230,9 +232,147 @@
                     </table>
                 </div>
             </div>
+
+            <!-- Tabela das 17 Divisões de Peso (WBA, WBC, IBF, WBO) -->
+            <div id="divisoes" class="conteudo-aba">
+                <div class="tabela-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Divisão (PT-BR)</th>
+                                <th>Nome Oficial (EN)</th>
+                                <th>Limite (Libras)</th>
+                                <th>Limite (Quilos)</th>
+                                <th>Organizações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Peso-Pesado</strong></td>
+                                <td>Heavyweight</td>
+                                <td>Acima de 200 lbs</td>
+                                <td>Acima de 90,72 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Cruzador</strong></td>
+                                <td>Cruiserweight</td>
+                                <td>Até 200 lbs</td>
+                                <td>Até 90,72 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Meio-Pesado</strong></td>
+                                <td>Light Heavyweight</td>
+                                <td>Até 175 lbs</td>
+                                <td>Até 79,38 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Super-Médio</strong></td>
+                                <td>Super Middleweight</td>
+                                <td>Até 168 lbs</td>
+                                <td>Até 76,20 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Médio</strong></td>
+                                <td>Middleweight</td>
+                                <td>Até 160 lbs</td>
+                                <td>Até 72,57 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Médio-Ligeiro</strong></td>
+                                <td>Super Welterweight / Jr. Middleweight</td>
+                                <td>Até 154 lbs</td>
+                                <td>Até 69,85 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Meio-Médio</strong></td>
+                                <td>Welterweight</td>
+                                <td>Até 147 lbs</td>
+                                <td>Até 66,68 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Super-Leve</strong></td>
+                                <td>Super Lightweight / Jr. Welterweight</td>
+                                <td>Até 140 lbs</td>
+                                <td>Até 63,50 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Leve</strong></td>
+                                <td>Lightweight</td>
+                                <td>Até 135 lbs</td>
+                                <td>Até 61,23 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Super-Pena</strong></td>
+                                <td>Super Featherweight / Jr. Lightweight</td>
+                                <td>Até 130 lbs</td>
+                                <td>Até 58,97 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Pena</strong></td>
+                                <td>Featherweight</td>
+                                <td>Até 126 lbs</td>
+                                <td>Até 57,15 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Super-Galo</strong></td>
+                                <td>Super Bantamweight / Jr. Featherweight</td>
+                                <td>Até 122 lbs</td>
+                                <td>Até 55,34 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Galo</strong></td>
+                                <td>Bantamweight</td>
+                                <td>Até 118 lbs</td>
+                                <td>Até 53,52 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Super-Mosca</strong></td>
+                                <td>Super Flyweight / Jr. Bantamweight</td>
+                                <td>Até 115 lbs</td>
+                                <td>Até 52,16 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Mosca</strong></td>
+                                <td>Flyweight</td>
+                                <td>Até 112 lbs</td>
+                                <td>Até 50,80 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso Mosca-Ligeiro</strong></td>
+                                <td>Light Flyweight / Jr. Flyweight</td>
+                                <td>Até 108 lbs</td>
+                                <td>Até 48,99 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Peso-Palha (Mínimo)</strong></td>
+                                <td>Minimumweight / Strawweight</td>
+                                <td>Até 105 lbs</td>
+                                <td>Até 47,63 kg</td>
+                                <td>WBA • WBC • IBF • WBO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
-        <!-- Seção de Lendas do Boxe (Com as fotos reais enviadas) -->
+        <!-- Seção de Lendas do Boxe -->
         <section id="lendas">
             <h2 class="titulo-secao">Lendas Imortais e Hall da Fama</h2>
             
@@ -287,57 +427,107 @@
                 </div>
             </div>
 
-            <!-- Outras Lendas Globais -->
-            <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Ícones Globais do Ringue</h3>
+            <!-- Outras Lendas Globais (Pronto para colar os links das fotos no src="") -->
+            <h3 class="subtitulo-grupo">Ícones Globais do Ringue</h3>
             <div class="grid-lendas">
                 <article class="card-lenda">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Muhammad Ali">
+                    </div>
                     <h4>Muhammad Ali</h4>
                     <span class="badge-categoria">Peso-Pesado</span>
                     <p>"The Greatest". Tricampeão mundial e figura histórica global.</p>
+                    <a href="https://www.youtube.com/results?search_query=muhammad+ali+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                 </article>
 
                 <article class="card-lenda">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Mike Tyson">
+                    </div>
                     <h4>Mike Tyson</h4>
                     <span class="badge-categoria">Peso-Pesado</span>
                     <p>O campeão dos pesados mais jovem e devastador da história.</p>
+                    <a href="https://www.youtube.com/results?search_query=mike+tyson+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                 </article>
 
                 <article class="card-lenda">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Manny Pacquiao">
+                    </div>
                     <h4>Manny Pacquiao</h4>
                     <span class="badge-categoria">8 Categorias</span>
                     <p>O único pugilista a conquistar títulos mundiais em 8 divisões.</p>
+                    <a href="https://www.youtube.com/results?search_query=manny+pacquiao+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                 </article>
 
                 <article class="card-lenda">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Floyd Mayweather">
+                    </div>
                     <h4>Floyd Mayweather Jr.</h4>
                     <span class="badge-categoria">Invicto (50-0)</span>
                     <p>Mestre absoluto da defesa, da esquiva e da inteligência tática.</p>
+                    <a href="https://www.youtube.com/results?search_query=floyd+mayweather+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
                 </article>
             </div>
         </section>
 
-        <!-- Busca Rápida -->
-        <section id="busca">
-            <h2 class="titulo-secao">Consulta Rápida de Lutadores</h2>
-            <div class="busca-container">
-                <div class="busca-input-group">
-                    <input type="text" id="campo-busca" placeholder="Digite o nome (ex: Ali, Tyson, Usyk, Leonard)...">
-                    <button id="btn-buscar">Buscar</button>
-                </div>
-                <div id="resultado-busca" class="resultado-box">
-                    Digite um nome acima para consultar informações detalhadas do atleta.
-                </div>
-            </div>
-        </section>
+        <!-- Nova Seção: Lutadores Brasileiros Lendários -->
+        <section id="brasil">
+            <h2 class="titulo-secao">🇧🇷 Lendas do Boxe Brasileiro</h2>
+            <p class="subtitulo-secao">Os grandes campeões mundiais e medalhistas olímpicos que fizeram história pelo Brasil.</p>
 
-    </main>
+            <div class="grid-lendas">
+                <!-- Éder Jofre -->
+                <article class="card-lenda card-brasil">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Éder Jofre">
+                    </div>
+                    <h4>Éder Jofre</h4>
+                    <span class="badge-categoria">Peso-Galo / Peso-Pena</span>
+                    <p>O "Galo de Ouro". Tricampeão mundial, membro do Hall da Fama e considerado o maior peso-galo da história.</p>
+                    <a href="https://www.youtube.com/results?search_query=eder+jofre+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                </article>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Nocautes Web - Fórum e Portal de Notícias do Boxe. Todos os direitos reservados.</p>
-    </footer>
+                <!-- Acelino Popó Freitas -->
+                <article class="card-lenda card-brasil">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Popó">
+                    </div>
+                    <h4>Acelino "Popó" Freitas</h4>
+                    <span class="badge-categoria">Super-Pena / Peso-Leve</span>
+                    <p>Tetracampeão mundial unificado (WBO/WBA) e dono de uma sequência histórica de 29 nocautes consecutivos.</p>
+                    <a href="https://www.youtube.com/results?search_query=acelino+popo+freitas+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                </article>
 
-    <!-- JavaScript -->
-    <script src="script.js?v=3.0"></script>
-</body>
-</html>
+                <!-- Adilson Maguila -->
+                <article class="card-lenda card-brasil">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Maguila">
+                    </div>
+                    <h4>Adilson "Maguila" Rodrigues</h4>
+                    <span class="badge-categoria">Peso-Pesado</span>
+                    <p>Maior ícone dos pesos-pesados do Brasil. Campeão mundial da WBF, sul-americano e das Américas.</p>
+                    <a href="https://www.youtube.com/results?search_query=adilson+maguila+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                </article>
+
+                <!-- Esquiva Falcão -->
+                <article class="card-lenda card-brasil">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Esquiva Falcão">
+                    </div>
+                    <h4>Esquiva Falcão</h4>
+                    <span class="badge-categoria">Peso-Médio</span>
+                    <p>Medalhista de prata nos Jogos Olímpicos de Londres (2012) e desafiante ao cinturão mundial dos médios.</p>
+                    <a href="https://www.youtube.com/results?search_query=esquiva+falcao+highlights" target="_blank" class="link-youtube">▶ Assistir Highlights</a>
+                </article>
+
+                <!-- Robson Conceição -->
+                <article class="card-lenda card-brasil">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Robson Conceição">
+                    </div>
+                    <h4>Robson Conceição</h4>
+                    <span class="badge-categoria">Peso Super-Pena</span>
+                    <p>Primeiro campeão olímpico da história do boxe brasileiro (Rio 2016) e campeão mundial profissional pelo WBC.</p>
+                    <a href="https
