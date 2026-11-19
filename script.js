@@ -1,18 +1,3 @@
-function abrirAba(evt, nomeAba) {
-    const conteudos = document.getElementsByClassName("conteudo-aba");
-    for (let i = 0; i < conteudos.length; i++) {
-        conteudos[i].classList.remove("ativo");
-    }
-
-    const abas = document.getElementsByClassName("aba-btn");
-    for (let i = 0; i < abas.length; i++) {
-        abas[i].classList.remove("ativo");
-    }
-
-    document.getElementById(nomeAba).classList.add("ativo");
-    evt.currentTarget.classList.add("ativo");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     const lutadores = [
         // Universo Rocky & Creed
@@ -54,11 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Peso Meio-Pesado (Light Heavyweight)", categoria: "Até 175 lbs (79,38 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso Super-Médio (Super Middleweight)", categoria: "Até 168 lbs (76,20 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Médio (Middleweight)", categoria: "Até 160 lbs (72,57 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Médio-Ligeiro (Super Welterweight)", categoria: "Até 154 lbs (69,85 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso Meio-Médio (Welterweight)", categoria: "Até 147 lbs (66,68 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Super-Leve (Super Lightweight)", categoria: "Até 140 lbs (63,50 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Leve (Lightweight)", categoria: "Até 135 lbs (61,23 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Super-Pena (Super Featherweight)", categoria: "Até 130 lbs (58,97 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Pena (Featherweight)", categoria: "Até 126 lbs (57,15 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Super-Galo (Super Bantamweight)", categoria: "Até 122 lbs (55,34 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Galo (Bantamweight)", categoria: "Até 118 lbs (53,52 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Super-Mosca (Super Flyweight)", categoria: "Até 115 lbs (52,16 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Mosca (Flyweight)", categoria: "Até 112 lbs (50,80 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
+        { nome: "Peso Mosca-Ligeiro (Light Flyweight)", categoria: "Até 108 lbs (48,99 kg)", status: "Divisão Oficial: WBA, WBC, IBF e WBO" },
         { nome: "Peso-Palha (Minimumweight)", categoria: "Até 105 lbs (47,63 kg)", status: "Divisão mais leve: WBA, WBC, IBF e WBO" }
     ];
 

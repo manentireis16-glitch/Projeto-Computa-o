@@ -6,7 +6,7 @@
     <title>Nocautes Web | O Portal Definitivo do Boxe</title>
     
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="style.css?v=6.0">
+    <link rel="stylesheet" href="style.css?v=7.1">
 </head>
 <body>
 
@@ -19,7 +19,8 @@
         <nav>
             <ul>
                 <li><a href="#noticias">Vídeos</a></li>
-                <li><a href="#rankings">Rankings & Divisões</a></li>
+                <li><a href="#rankings">Ranking P4P</a></li>
+                <li><a href="#divisoes">Divisões de Peso</a></li>
                 <li><a href="#lendas">Lendas</a></li>
                 <li><a href="#brasil">Brasil</a></li>
                 <li><a href="#cinema">Rocky & Creed</a></li>
@@ -33,7 +34,7 @@
         <div class="hero-info">
             <span class="tag-vermelha">Destaque da Semana</span>
             <h2>A Nobre Arte em Alta Definição</h2>
-            <p>Análises táticas profundas, rankings P4P, as 17 divisões oficiais (WBA, WBC, IBF, WBO), lendas do boxe e o universo de Rocky & Creed.</p>
+            <p>Ranking Pound-for-Pound, as 17 divisões oficiais (WBA, WBC, IBF, WBO), lendas mundiais, boxe brasileiro e Rocky & Creed.</p>
         </div>
     </section>
 
@@ -90,321 +91,236 @@
             </div>
         </section>
 
-        <!-- Rankings & Divisões -->
+        <!-- Ranking Pound-for-Pound (Top 10) -->
         <section id="rankings">
-            <h2 class="titulo-secao">Rankings e Divisões Oficiais</h2>
-            <p class="subtitulo-secao">Consolidação das 4 grandes organizações: WBA, WBC, IBF e WBO.</p>
+            <h2 class="titulo-secao">Ranking Pound-for-Pound (Top 10)</h2>
+            <p class="subtitulo-secao">Os melhores lutadores peso-por-peso considerando WBA, WBC, IBF e WBO.</p>
 
-            <div class="abas-container">
-                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound (Top 10)</button>
-                <button class="aba-btn" onclick="abrirAba(event, 'pesados')">Pesos-Pesados</button>
-                <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Super-Médios</button>
-                <button class="aba-btn" onclick="abrirAba(event, 'divisoes')">Todas as 17 Divisões</button>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Lutador</th>
+                            <th>Categoria</th>
+                            <th>Cartel</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>#1</strong></td>
+                            <td><strong>Oleksandr Usyk</strong></td>
+                            <td>Peso-Pesado</td>
+                            <td>22-0-0 (14 KO)</td>
+                            <td>Campeão Unificado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#2</strong></td>
+                            <td><strong>Naoya Inoue</strong></td>
+                            <td>Peso Super-Galo</td>
+                            <td>28-0-0 (25 KO)</td>
+                            <td>Campeão Indiscutível</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#3</strong></td>
+                            <td><strong>Terence Crawford</strong></td>
+                            <td>Peso Médio-Ligeiro</td>
+                            <td>41-0-0 (31 KO)</td>
+                            <td>Campeão Mundial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#4</strong></td>
+                            <td><strong>Canelo Álvarez</strong></td>
+                            <td>Peso Super-Médio</td>
+                            <td>62-2-2 (39 KO)</td>
+                            <td>Campeão Unificado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#5</strong></td>
+                            <td><strong>Artur Beterbiev</strong></td>
+                            <td>Peso Meio-Pesado</td>
+                            <td>21-0-0 (20 KO)</td>
+                            <td>Campeão Indiscutível</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#6</strong></td>
+                            <td><strong>Dmitry Bivol</strong></td>
+                            <td>Peso Meio-Pesado</td>
+                            <td>23-1-0 (12 KO)</td>
+                            <td>Contender de Elite</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#7</strong></td>
+                            <td><strong>Jesse "Bam" Rodriguez</strong></td>
+                            <td>Peso Super-Mosca</td>
+                            <td>20-0-0 (13 KO)</td>
+                            <td>Campeão Mundial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#8</strong></td>
+                            <td><strong>Gervonta "Tank" Davis</strong></td>
+                            <td>Peso-Leve</td>
+                            <td>30-0-0 (28 KO)</td>
+                            <td>Campeão Mundial WBA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#9</strong></td>
+                            <td><strong>Devin Haney</strong></td>
+                            <td>Peso Super-Leve</td>
+                            <td>31-0-0 (15 KO)</td>
+                            <td>Ex-Campeão Indiscutível</td>
+                        </tr>
+                        <tr>
+                            <td><strong>#10</strong></td>
+                            <td><strong>Junto Nakatani</strong></td>
+                            <td>Peso-Galo</td>
+                            <td>28-0-0 (21 KO)</td>
+                            <td>Campeão Mundial</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </section>
 
-            <!-- Tabela P4P Completa (Top 10) -->
-            <div id="p4p" class="conteudo-aba ativo">
-                <div class="tabela-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Lutador</th>
-                                <th>Categoria</th>
-                                <th>Cartel</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>#1</strong></td>
-                                <td><strong>Oleksandr Usyk</strong></td>
-                                <td>Peso-Pesado</td>
-                                <td>22-0-0 (14 KO)</td>
-                                <td>Campeão Unificado</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#2</strong></td>
-                                <td><strong>Naoya Inoue</strong></td>
-                                <td>Peso Super-Galo</td>
-                                <td>28-0-0 (25 KO)</td>
-                                <td>Campeão Indiscutível</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#3</strong></td>
-                                <td><strong>Terence Crawford</strong></td>
-                                <td>Peso Médio-Ligeiro</td>
-                                <td>41-0-0 (31 KO)</td>
-                                <td>Campeão Mundial</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#4</strong></td>
-                                <td><strong>Canelo Álvarez</strong></td>
-                                <td>Peso Super-Médio</td>
-                                <td>62-2-2 (39 KO)</td>
-                                <td>Campeão Unificado</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#5</strong></td>
-                                <td><strong>Artur Beterbiev</strong></td>
-                                <td>Peso Meio-Pesado</td>
-                                <td>21-0-0 (20 KO)</td>
-                                <td>Campeão Indiscutível</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#6</strong></td>
-                                <td><strong>Dmitry Bivol</strong></td>
-                                <td>Peso Meio-Pesado</td>
-                                <td>23-1-0 (12 KO)</td>
-                                <td>Contender de Elite</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#7</strong></td>
-                                <td><strong>Jesse "Bam" Rodriguez</strong></td>
-                                <td>Peso Super-Mosca</td>
-                                <td>20-0-0 (13 KO)</td>
-                                <td>Campeão Mundial</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#8</strong></td>
-                                <td><strong>Gervonta "Tank" Davis</strong></td>
-                                <td>Peso-Leve</td>
-                                <td>30-0-0 (28 KO)</td>
-                                <td>Campeão Mundial WBA</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#9</strong></td>
-                                <td><strong>Devin Haney</strong></td>
-                                <td>Peso Super-Leve</td>
-                                <td>31-0-0 (15 KO)</td>
-                                <td>Ex-Campeão Indiscutível</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#10</strong></td>
-                                <td><strong>Junto Nakatani</strong></td>
-                                <td>Peso-Galo</td>
-                                <td>28-0-0 (21 KO)</td>
-                                <td>Campeão Mundial</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        <!-- Todas as 17 Divisões de Peso (WBA, WBC, IBF, WBO) -->
+        <section id="divisoes">
+            <h2 class="titulo-secao">As 17 Divisões de Peso (WBA, WBC, IBF e WBO)</h2>
+            <p class="subtitulo-secao">Limites oficiais de peso em Libras (lbs) e Quilogramas (kg) nas quatro principais organizações.</p>
 
-            <!-- Tabela Pesos-Pesados -->
-            <div id="pesados" class="conteudo-aba">
-                <div class="tabela-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Pos</th>
-                                <th>Lutador</th>
-                                <th>País</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>C</strong></td>
-                                <td><strong>Oleksandr Usyk</strong></td>
-                                <td>Ucrânia</td>
-                                <td>Campeão WBA, WBC, WBO & Ring</td>
-                            </tr>
-                            <tr>
-                                <td><strong>C</strong></td>
-                                <td><strong>Daniel Dubois</strong></td>
-                                <td>Reino Unido</td>
-                                <td>Campeão IBF</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#1</strong></td>
-                                <td><strong>Tyson Fury</strong></td>
-                                <td>Reino Unido</td>
-                                <td>Desafiante Principal</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#2</strong></td>
-                                <td><strong>Joseph Parker</strong></td>
-                                <td>Nova Zelândia</td>
-                                <td>Campeão Interino WBO</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Tabela Super-Médios -->
-            <div id="super-medios" class="conteudo-aba">
-                <div class="tabela-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Pos</th>
-                                <th>Lutador</th>
-                                <th>País</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>C</strong></td>
-                                <td><strong>Canelo Álvarez</strong></td>
-                                <td>México</td>
-                                <td>Campeão Unificado WBA, WBC, WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#1</strong></td>
-                                <td><strong>Christian Mbilli</strong></td>
-                                <td>França</td>
-                                <td>Desafiante #1 WBC</td>
-                            </tr>
-                            <tr>
-                                <td><strong>#2</strong></td>
-                                <td><strong>Jaime Munguia</strong></td>
-                                <td>México</td>
-                                <td>Contender Top 5</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Tabela das 17 Divisões de Peso (WBA, WBC, IBF, WBO) -->
-            <div id="divisoes" class="conteudo-aba">
-                <div class="tabela-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Divisão (PT-BR)</th>
-                                <th>Nome Oficial (EN)</th>
-                                <th>Limite (Libras)</th>
-                                <th>Limite (Quilos)</th>
-                                <th>Organizações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Peso-Pesado</strong></td>
-                                <td>Heavyweight</td>
-                                <td>Acima de 200 lbs</td>
-                                <td>Acima de 90,72 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Cruzador</strong></td>
-                                <td>Cruiserweight</td>
-                                <td>Até 200 lbs</td>
-                                <td>Até 90,72 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Meio-Pesado</strong></td>
-                                <td>Light Heavyweight</td>
-                                <td>Até 175 lbs</td>
-                                <td>Até 79,38 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Super-Médio</strong></td>
-                                <td>Super Middleweight</td>
-                                <td>Até 168 lbs</td>
-                                <td>Até 76,20 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Médio</strong></td>
-                                <td>Middleweight</td>
-                                <td>Até 160 lbs</td>
-                                <td>Até 72,57 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Médio-Ligeiro</strong></td>
-                                <td>Super Welterweight / Jr. Middleweight</td>
-                                <td>Até 154 lbs</td>
-                                <td>Até 69,85 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Meio-Médio</strong></td>
-                                <td>Welterweight</td>
-                                <td>Até 147 lbs</td>
-                                <td>Até 66,68 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Super-Leve</strong></td>
-                                <td>Super Lightweight / Jr. Welterweight</td>
-                                <td>Até 140 lbs</td>
-                                <td>Até 63,50 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Leve</strong></td>
-                                <td>Lightweight</td>
-                                <td>Até 135 lbs</td>
-                                <td>Até 61,23 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Super-Pena</strong></td>
-                                <td>Super Featherweight / Jr. Lightweight</td>
-                                <td>Até 130 lbs</td>
-                                <td>Até 58,97 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Pena</strong></td>
-                                <td>Featherweight</td>
-                                <td>Até 126 lbs</td>
-                                <td>Até 57,15 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Super-Galo</strong></td>
-                                <td>Super Bantamweight / Jr. Featherweight</td>
-                                <td>Até 122 lbs</td>
-                                <td>Até 55,34 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Galo</strong></td>
-                                <td>Bantamweight</td>
-                                <td>Até 118 lbs</td>
-                                <td>Até 53,52 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Super-Mosca</strong></td>
-                                <td>Super Flyweight / Jr. Bantamweight</td>
-                                <td>Até 115 lbs</td>
-                                <td>Até 52,16 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Mosca</strong></td>
-                                <td>Flyweight</td>
-                                <td>Até 112 lbs</td>
-                                <td>Até 50,80 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso Mosca-Ligeiro</strong></td>
-                                <td>Light Flyweight / Jr. Flyweight</td>
-                                <td>Até 108 lbs</td>
-                                <td>Até 48,99 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peso-Palha (Mínimo)</strong></td>
-                                <td>Minimumweight / Strawweight</td>
-                                <td>Até 105 lbs</td>
-                                <td>Até 47,63 kg</td>
-                                <td>WBA • WBC • IBF • WBO</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Divisão (PT-BR)</th>
+                            <th>Nome Oficial (EN)</th>
+                            <th>Limite (Libras)</th>
+                            <th>Limite (Quilos)</th>
+                            <th>Organizações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Peso-Pesado</strong></td>
+                            <td>Heavyweight</td>
+                            <td>Acima de 200 lbs</td>
+                            <td>Acima de 90,72 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Cruzador</strong></td>
+                            <td>Cruiserweight</td>
+                            <td>Até 200 lbs</td>
+                            <td>Até 90,72 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Meio-Pesado</strong></td>
+                            <td>Light Heavyweight</td>
+                            <td>Até 175 lbs</td>
+                            <td>Até 79,38 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Super-Médio</strong></td>
+                            <td>Super Middleweight</td>
+                            <td>Até 168 lbs</td>
+                            <td>Até 76,20 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Médio</strong></td>
+                            <td>Middleweight</td>
+                            <td>Até 160 lbs</td>
+                            <td>Até 72,57 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Médio-Ligeiro</strong></td>
+                            <td>Super Welterweight / Jr. Middleweight</td>
+                            <td>Até 154 lbs</td>
+                            <td>Até 69,85 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Meio-Médio</strong></td>
+                            <td>Welterweight</td>
+                            <td>Até 147 lbs</td>
+                            <td>Até 66,68 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Super-Leve</strong></td>
+                            <td>Super Lightweight / Jr. Welterweight</td>
+                            <td>Até 140 lbs</td>
+                            <td>Até 63,50 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Leve</strong></td>
+                            <td>Lightweight</td>
+                            <td>Até 135 lbs</td>
+                            <td>Até 61,23 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Super-Pena</strong></td>
+                            <td>Super Featherweight / Jr. Lightweight</td>
+                            <td>Até 130 lbs</td>
+                            <td>Até 58,97 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Pena</strong></td>
+                            <td>Featherweight</td>
+                            <td>Até 126 lbs</td>
+                            <td>Até 57,15 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Super-Galo</strong></td>
+                            <td>Super Bantamweight / Jr. Featherweight</td>
+                            <td>Até 122 lbs</td>
+                            <td>Até 55,34 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Galo</strong></td>
+                            <td>Bantamweight</td>
+                            <td>Até 118 lbs</td>
+                            <td>Até 53,52 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Super-Mosca</strong></td>
+                            <td>Super Flyweight / Jr. Bantamweight</td>
+                            <td>Até 115 lbs</td>
+                            <td>Até 52,16 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Mosca</strong></td>
+                            <td>Flyweight</td>
+                            <td>Até 112 lbs</td>
+                            <td>Até 50,80 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso Mosca-Ligeiro</strong></td>
+                            <td>Light Flyweight / Jr. Flyweight</td>
+                            <td>Até 108 lbs</td>
+                            <td>Até 48,99 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peso-Palha (Mínimo)</strong></td>
+                            <td>Minimumweight / Strawweight</td>
+                            <td>Até 105 lbs</td>
+                            <td>Até 47,63 kg</td>
+                            <td>WBA • WBC • IBF • WBO</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -632,3 +548,19 @@
                     <button id="btn-buscar">Buscar</button>
                 </div>
                 <div id="resultado-busca" class="resultado-box">
+                    Digite um nome acima para consultar informações detalhadas do atleta, personagem ou limite de peso.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Nocautes Web - Fórum e Portal de Notícias do Boxe. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js?v=7.1"></script>
+</body>
+</html>
