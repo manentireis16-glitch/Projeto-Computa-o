@@ -15,6 +15,12 @@ function abrirAba(evt, nomeAba) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const lutadores = [
+        // Universo Rocky & Creed
+        { nome: "Rocky Balboa", categoria: "Peso-Pesado (Cinema / Filadélfia)", status: "Ícone de superação da franquia Rocky e mentor de Adonis Creed" },
+        { nome: "Apollo Creed", categoria: "Peso-Pesado (Cinema)", status: "Ex-campeão mundial dos pesados, rival e amigo de Rocky Balboa" },
+        { nome: "Adonis Creed", categoria: "Peso Meio-Pesado / Cruzador (Cinema)", status: "Protagonista da franquia Creed e pupilo de Rocky Balboa" },
+        { nome: "Ivan Drago", categoria: "Peso-Pesado (Cinema)", status: "Rival histórico de potência física na saga Rocky e Creed" },
+
         // Lendas Brasileiras
         { nome: "Éder Jofre", categoria: "Peso-Galo / Peso-Pena", status: "Lenda do Brasil / Tricampeão Mundial e Hall da Fama" },
         { nome: "Acelino Popó Freitas", categoria: "Super-Pena / Peso-Leve", status: "Lenda do Brasil / Tetracampeão Mundial Unificado (WBO/WBA)" },
@@ -22,10 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Esquiva Falcão", categoria: "Peso-Médio", status: "Lenda do Brasil / Prata Olímpica (Londres 2012)" },
         { nome: "Robson Conceição", categoria: "Peso Super-Pena", status: "Lenda do Brasil / Ouro Olímpico (Rio 2016) e Campeão Mundial WBC" },
 
-        // Rankings e Lendas Mundiais
+        // Ranking P4P (Top 10) e Lendas Mundiais
         { nome: "Oleksandr Usyk", categoria: "Peso-Pesado", status: "#1 no Ranking P4P / Campeão Unificado" },
         { nome: "Naoya Inoue", categoria: "Peso Super-Galo", status: "#2 no Ranking P4P / Campeão Indiscutível" },
-        { nome: "Canelo Alvarez", categoria: "Peso Super-Médio", status: "#4 no Ranking P4P / Campeão Unificado" },
+        { nome: "Terence Crawford", categoria: "Peso Médio-Ligeiro", status: "#3 no Ranking P4P / Campeão Mundial" },
+        { nome: "Canelo Álvarez", categoria: "Peso Super-Médio", status: "#4 no Ranking P4P / Campeão Unificado" },
+        { nome: "Artur Beterbiev", categoria: "Peso Meio-Pesado", status: "#5 no Ranking P4P / Campeão Indiscutível" },
+        { nome: "Dmitry Bivol", categoria: "Peso Meio-Pesado", status: "#6 no Ranking P4P / Contender de Elite" },
+        { nome: "Jesse Bam Rodriguez", categoria: "Peso Super-Mosca", status: "#7 no Ranking P4P / Campeão Mundial" },
+        { nome: "Gervonta Tank Davis", categoria: "Peso-Leve", status: "#8 no Ranking P4P / Campeão Mundial WBA" },
+        { nome: "Devin Haney", categoria: "Peso Super-Leve", status: "#9 no Ranking P4P / Ex-Campeão Indiscutível" },
+        { nome: "Junto Nakatani", categoria: "Peso-Galo", status: "#10 no Ranking P4P / Campeão Mundial" },
         { nome: "Muhammad Ali", categoria: "Peso-Pesado", status: "Lenda / Tricampeão Mundial" },
         { nome: "Mike Tyson", categoria: "Peso-Pesado", status: "Lenda / Campeão Mundial mais jovem da história" },
         { nome: "Sugar Ray Leonard", categoria: "Meio-Médio / Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },

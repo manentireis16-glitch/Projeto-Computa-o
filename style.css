@@ -16,6 +16,7 @@
     --vermelho-destaque: #ff0000;
     --vermelho-hover: #cc0000;
     --verde-brasil: #009c3b;
+    --ouro-cinema: #d4af37;
 }
 
 body {
@@ -75,12 +76,12 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 12px;
+    gap: 10px;
 }
 
 nav ul li a {
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--texto-secundario);
     padding: 6px 12px;
     border-radius: 18px;
@@ -358,7 +359,10 @@ tr:hover {
     border-color: var(--verde-brasil);
 }
 
-/* Container da imagem em bloco próprio para nunca invadir os textos */
+.card-cinema:hover {
+    border-color: var(--ouro-cinema);
+}
+
 .thumb-container-lenda {
     display: block;
     width: 100%;
@@ -377,6 +381,9 @@ tr:hover {
     object-fit: cover;
     object-position: top center;
     transition: transform 0.3s ease;
+    color: #777777;
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 .card-lenda:hover .thumb-container-lenda img {

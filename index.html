@@ -6,7 +6,7 @@
     <title>Nocautes Web | O Portal Definitivo do Boxe</title>
     
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="style.css?v=5.1">
+    <link rel="stylesheet" href="style.css?v=6.0">
 </head>
 <body>
 
@@ -22,6 +22,7 @@
                 <li><a href="#rankings">Rankings & Divisões</a></li>
                 <li><a href="#lendas">Lendas</a></li>
                 <li><a href="#brasil">Brasil</a></li>
+                <li><a href="#cinema">Rocky & Creed</a></li>
                 <li><a href="#busca">Busca</a></li>
             </ul>
         </nav>
@@ -32,7 +33,7 @@
         <div class="hero-info">
             <span class="tag-vermelha">Destaque da Semana</span>
             <h2>A Nobre Arte em Alta Definição</h2>
-            <p>Análises táticas profundas, as 17 divisões oficiais (WBA, WBC, IBF, WBO), arquivo de lendas e ícones do boxe brasileiro.</p>
+            <p>Análises táticas profundas, rankings P4P, as 17 divisões oficiais (WBA, WBC, IBF, WBO), lendas do boxe e o universo de Rocky & Creed.</p>
         </div>
     </section>
 
@@ -95,13 +96,13 @@
             <p class="subtitulo-secao">Consolidação das 4 grandes organizações: WBA, WBC, IBF e WBO.</p>
 
             <div class="abas-container">
-                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound</button>
+                <button class="aba-btn ativo" onclick="abrirAba(event, 'p4p')">Pound-for-Pound (Top 10)</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'pesados')">Pesos-Pesados</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'super-medios')">Super-Médios</button>
                 <button class="aba-btn" onclick="abrirAba(event, 'divisoes')">Todas as 17 Divisões</button>
             </div>
 
-            <!-- Tabela P4P -->
+            <!-- Tabela P4P Completa (Top 10) -->
             <div id="p4p" class="conteudo-aba ativo">
                 <div class="tabela-container">
                     <table>
@@ -149,6 +150,41 @@
                                 <td>Peso Meio-Pesado</td>
                                 <td>21-0-0 (20 KO)</td>
                                 <td>Campeão Indiscutível</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#6</strong></td>
+                                <td><strong>Dmitry Bivol</strong></td>
+                                <td>Peso Meio-Pesado</td>
+                                <td>23-1-0 (12 KO)</td>
+                                <td>Contender de Elite</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#7</strong></td>
+                                <td><strong>Jesse "Bam" Rodriguez</strong></td>
+                                <td>Peso Super-Mosca</td>
+                                <td>20-0-0 (13 KO)</td>
+                                <td>Campeão Mundial</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#8</strong></td>
+                                <td><strong>Gervonta "Tank" Davis</strong></td>
+                                <td>Peso-Leve</td>
+                                <td>30-0-0 (28 KO)</td>
+                                <td>Campeão Mundial WBA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#9</strong></td>
+                                <td><strong>Devin Haney</strong></td>
+                                <td>Peso Super-Leve</td>
+                                <td>31-0-0 (15 KO)</td>
+                                <td>Ex-Campeão Indiscutível</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#10</strong></td>
+                                <td><strong>Junto Nakatani</strong></td>
+                                <td>Peso-Galo</td>
+                                <td>28-0-0 (21 KO)</td>
+                                <td>Campeão Mundial</td>
                             </tr>
                         </tbody>
                     </table>
@@ -535,28 +571,24 @@
             </div>
         </section>
 
-        <!-- Busca Rápida -->
-        <section id="busca">
-            <h2 class="titulo-secao">Consulta Rápida de Lutadores e Divisões</h2>
-            <div class="busca-container">
-                <div class="busca-input-group">
-                    <input type="text" id="campo-busca" placeholder="Digite lutador ou divisão (ex: Jofre, Popó, Esquiva, Robson, Médio)...">
-                    <button id="btn-buscar">Buscar</button>
-                </div>
-                <div id="resultado-busca" class="resultado-box">
-                    Digite um nome acima para consultar informações detalhadas do atleta ou limite de peso.
-                </div>
-            </div>
-        </section>
+        <!-- Nova Categoria: Rocky Balboa & Creed -->
+        <section id="cinema">
+            <h2 class="titulo-secao">🎬 Universo Rocky Balboa & Creed</h2>
+            <p class="subtitulo-secao">A franquia mais icônica do boxe no cinema: resiliência, legado, treinamento e grandes duelos.</p>
 
-    </main>
+            <div class="grid-lendas">
+                <!-- Rocky Balboa -->
+                <article class="card-lenda card-cinema">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Rocky Balboa">
+                    </div>
+                    <h4>Rocky "Italian Stallion" Balboa</h4>
+                    <span class="badge-categoria">Peso-Pesado (Filadélfia)</span>
+                    <p>Símbolo máximo de superação e resistência. Saiu do anonimato na Filadélfia para encarar Apollo Creed e conquistar o título mundial dos pesados.</p>
+                    <a href="https://www.youtube.com/results?search_query=rocky+balboa+best+moments+boxing" target="_blank" class="link-youtube">▶ Assistir Cenas & Lutas</a>
+                </article>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Nocautes Web - Fórum e Portal de Notícias do Boxe. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js?v=5.1"></script>
-</body>
-</html>
+                <!-- Apollo Creed -->
+                <article class="card-lenda card-cinema">
+                    <div class="thumb-container-lenda">
+                        <img src="" alt="Cole o link da foto do Apollo Creed">
