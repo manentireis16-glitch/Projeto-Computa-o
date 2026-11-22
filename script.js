@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const lutadores = [
+        // 4 Grandes Organizações
+        { nome: "WBC - World Boxing Council", categoria: "Organização Mundial", status: "Conselho Mundial de Boxe (1963), cinturão verde e dourado." },
+        { nome: "WBA - World Boxing Association", categoria: "Organização Mundial", status: "Associação Mundial de Boxe (1921 / WBA desde 1962), presença global." },
+        { nome: "IBF - International Boxing Federation", categoria: "Organização Mundial", status: "Federação Internacional de Boxe (1983), rigor em defesas obrigatórias." },
+        { nome: "WBO - World Boxing Organization", categoria: "Organização Mundial", status: "Organização Mundial de Boxe (1988), forte atuação internacional." },
+
         // Universo Rocky & Creed
         { nome: "Rocky Balboa", categoria: "Peso-Pesado (Cinema / Filadélfia)", status: "Ícone de superação da franquia Rocky e mentor de Adonis Creed" },
         { nome: "Apollo Creed", categoria: "Peso-Pesado (Cinema)", status: "Ex-campeão mundial dos pesados, rival e amigo de Rocky Balboa" },
@@ -12,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Adilson Maguila Rodrigues", categoria: "Peso-Pesado", status: "Lenda do Brasil / Campeão Mundial WBF e Sul-Americano" },
         { nome: "Esquiva Falcão", categoria: "Peso-Médio", status: "Lenda do Brasil / Prata Olímpica (Londres 2012)" },
         { nome: "Robson Conceição", categoria: "Peso Super-Pena", status: "Lenda do Brasil / Ouro Olímpico (Rio 2016) e Campeão Mundial WBC" },
+        { nome: "Valdemir Sertão Pereira", categoria: "Peso-Pena", status: "Lenda do Brasil / Campeão Mundial IBF (2006)" },
+        { nome: "Rose Volante", categoria: "Peso-Leve", status: "Lenda do Brasil / Primeira brasileira campeã mundial profissional (WBO)" },
+        { nome: "Macaris Livramento", categoria: "Peso Super-Leve / Meio-Médio", status: "Lenda do Brasil / Campeão nacional e destaque em disputas de título" },
 
         // Ranking P4P (Top 10) e Lendas Mundiais
         { nome: "Oleksandr Usyk", categoria: "Peso-Pesado", status: "#1 no Ranking P4P / Campeão Unificado" },
@@ -26,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "Junto Nakatani", categoria: "Peso-Galo", status: "#10 no Ranking P4P / Campeão Mundial" },
         { nome: "Muhammad Ali", categoria: "Peso-Pesado", status: "Lenda / Tricampeão Mundial" },
         { nome: "Mike Tyson", categoria: "Peso-Pesado", status: "Lenda / Campeão Mundial mais jovem da história" },
+        { nome: "George Foreman", categoria: "Peso-Pesado", status: "Lenda / Bicampeão Mundial dos Pesados" },
+        { nome: "Joe Frazier", categoria: "Peso-Pesado", status: "Lenda / Campeão Olímpico e Mundial dos Pesados" },
+        { nome: "Evander Holyfield", categoria: "Cruzador / Peso-Pesado", status: "Lenda / Tetracampeão Mundial dos Pesados e Indiscutível nos Cruzadores" },
+        { nome: "Rocky Marciano", categoria: "Peso-Pesado", status: "Lenda / Único campeão mundial dos pesados invicto (49-0)" },
         { nome: "Sugar Ray Leonard", categoria: "Meio-Médio / Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Roberto Duran", categoria: "Peso-Leve", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
         { nome: "Thomas Hearns", categoria: "Meio-Médio", status: "Lenda / Um dos 'Quatro Reis' dos Anos 80" },
@@ -67,7 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const encontrado = lutadores.find(l => 
             l.nome.toLowerCase().includes(termo) || 
-            l.categoria.toLowerCase().includes(termo)
+            l.categoria.toLowerCase().includes(termo) ||
+            l.status.toLowerCase().includes(termo)
         );
 
         if (encontrado) {
